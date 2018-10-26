@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12 col-md-7 col-sm-6 page-header">
+          <div class="col-lg-12">
             <hr />
           </div>
         </div>

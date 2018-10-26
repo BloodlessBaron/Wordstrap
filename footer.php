@@ -1,11 +1,6 @@
 <?php get_sidebar(); ?>
 </div>
 </main>
-<div class="row">
-  <div class="col-lg-12">
-    <p>&nbsp;</p>
-  </div>
-</div>
 
     <footer class="footer bg-dark">
       <div id="footer" class="container">
