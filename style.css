@@ -17,8 +17,13 @@ body {
 }
 
 .sticky-tag {
+  color: #fff;
   font-size: medium;
   font-variant: small-caps;
+}
+
+.sidebar-module ul {
+  list-style: none;
 }
 
 /* Sticky footer styles
