@@ -10,17 +10,10 @@ Text Domain: wordstrap
 
 body {
   padding-top: 120px;
-  background: url(bootstrap/images/background.png)
 }
 
 .page-header h1 {
   font-size: 3rem;
-}
-
-.sticky-tag {
-  color: #fff;
-  font-size: medium;
-  font-variant: small-caps;
 }
 
 #sidebar-module ul {
