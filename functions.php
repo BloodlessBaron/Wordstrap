@@ -57,9 +57,12 @@ register_sidebar( array(
     'before_widget' => '<div class="sidebar-module">',
     'after_widget'  => '</div>',
     'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
-    'before_widget' => '<div id="%1$s" class="jumbotron">',
-    'after_widget' => '</div>',
+    'after_title'   => '</h4>'
+) );
+
+register_sidebar( array(
+    'name'          => 'Footer',
+    'id'            => 'footer'
 ) );
 
 /**

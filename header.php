@@ -42,4 +42,15 @@
             <p class="lead"><?php echo get_bloginfo( 'description' ); ?></p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-7 col-sm-6 page-header">
+            <hr />
+          </div>
+        </div>
       </div>
+      <div class="row">
+        <?php if ( is_active_sidebar( 'sidebar' ) ) { ?>
+          <div class="col-sm-8 blog-main">
+        <?php } else { ?>
+          <div class="col-lg-12 blog-main">
+        <?php } ?>

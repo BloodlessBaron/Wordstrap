@@ -8,8 +8,12 @@
 </div>
 
     <footer class="footer bg-dark">
-      <div class="container">
+      <div id="footer" class="container">
+        <?php if ( is_active_sidebar( 'footer' ) ) {
+          dynamic_sidebar( 'footer' );
+        } else { ?>
         <span class="text-muted">&copy; <?php echo date("Y"). ' ' . get_bloginfo('name'); ?>.</span>
+      <?php } ?>
       </div>
     </footer>
 

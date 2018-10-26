@@ -16,6 +16,14 @@ body {
   font-size: 3rem;
 }
 
+.sidebar-module {
+  padding-bottom: 1rem;
+}
+
+#footer li {
+  display: inline;
+}
+
 #sidebar-module ul {
   list-style: none;
 }
