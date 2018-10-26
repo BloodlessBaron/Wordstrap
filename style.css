@@ -1,0 +1,47 @@
+/*
+Theme Name: Wordtrap Starter Theme
+Theme URI: https://github.com/BloodlessBaron/Wordstrap
+Author: John Barner
+Author URI: https://veiled.xyz
+Description: A simple starter Wordpress theme based on Bootstrap for building upon.
+Version: 0.0.1
+Text Domain: wordstrap
+*/
+
+body {
+  padding-top: 120px;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+}
+
+.sticky-tag {
+  font-size: medium;
+  font-variant: small-caps;
+}
+
+#div[id*="post-"] a.read-more {
+  margin-bottom: 100px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
