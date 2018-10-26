@@ -41,6 +41,9 @@ function special_nav_class ($classes, $item) {
     if (in_array('current-menu-item', $classes) ){
         $classes[] = 'active ';
     }
+    if (in_array('postform', $classes) ){
+        $classes[] = 'form-control ';
+    }
     return $classes;
 }
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
@@ -55,6 +58,8 @@ register_sidebar( array(
     'after_widget'  => '</div>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4>',
+    'before_widget' => '<div id="%1$s" class="jumbotron">',
+    'after_widget' => '</div>',
 ) );
 
 /**
