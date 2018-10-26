@@ -49,17 +49,8 @@ add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
  * Register sidebars
  */
 register_sidebar( array(
-    'name'          => 'Sidebar - Inset',
-    'id'            => 'sidebar-1',
-    'before_widget' => '<div class="sidebar-module sidebar-module-inset">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
-) );
-
-register_sidebar( array(
-    'name'          => 'Sidebar - Default',
-    'id'            => 'sidebar-2',
+    'name'          => 'Sidebar',
+    'id'            => 'sidebar',
     'before_widget' => '<div class="sidebar-module">',
     'after_widget'  => '</div>',
     'before_title'  => '<h4>',
