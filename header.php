@@ -25,9 +25,9 @@
           'walker' => new WPDocs_Walker_Nav_Menu()
           ) ); ?>
 
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <form role="search" method="get" id="searchform" class="form-inline mt-2 mt-md-0 searchform" action="<?php echo home_url( '/' ); ?>">
+            <input class="form-control mr-sm-2" type="search" name="s" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchsubmit">Search</button>
           </form>
         </div>
       </nav>
