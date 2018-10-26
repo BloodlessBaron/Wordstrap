@@ -1,0 +1,1 @@
+I'm pretty amateur, and I don't have a lot of skill with HTML, CSS, and PHP. So if you see any issues you think need addressed, or you have a suggestion for something that should be added, create an issue. If I like what you're saying, I'll have you create a pull request if I don't have the time or knowledge to fix it myself.
