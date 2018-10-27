@@ -20,6 +20,10 @@ body {
   padding-bottom: 1rem;
 }
 
+.blog-post {
+  padding-bottom: 4rem;
+}
+
 #footer li {
   display: inline;
 }
