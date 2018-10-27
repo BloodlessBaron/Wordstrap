@@ -6,3 +6,4 @@
   </div>
 </div><!-- /.blog-sidebar -->
 <?php } ?>
+</div>
