@@ -12,6 +12,11 @@ body {
   padding-top: 120px;
 }
 
+.navbar {
+  background: url(images/navbar.jpg);
+  background-size: cover;
+}
+
 .page-header h1 {
   font-size: 3rem;
 }
