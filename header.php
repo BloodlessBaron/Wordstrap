@@ -11,7 +11,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">Home</a>
+        <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <?php wp_nav_menu( array(
           'theme_location' => 'header-menu',
@@ -27,16 +27,16 @@
           </form>
         </div>
       </nav>
+
+        <div class="col-lg-12 col-md-7 col-sm-6 page-header">
+          <p class="lead"><?php echo get_bloginfo( 'description' ); ?></p>
+        </div>
     </header>
 
 <!-- Begin page content -->
 <main class="container">
       <div class="page-header" id="banner">
         <div class="row">
-          <div class="col-lg-8 col-md-7 col-sm-6 page-header">
-            <h1><?php echo get_bloginfo( 'name' ); ?></h1>
-            <p class="lead"><?php echo get_bloginfo( 'description' ); ?></p>
-          </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
