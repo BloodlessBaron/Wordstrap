@@ -66,7 +66,7 @@ register_sidebar( array(
 ) );
 
 /**
- * Custom walker class.
+ * Custom Read More button
  */
 function modify_read_more_link() {
     return '<a class="read-more" href="'. get_permalink() . '"><button type="button" class="btn btn-primary">' . __('Read More', 'your-text-domain') . '</button></a><p>&nbsp;</p>';
