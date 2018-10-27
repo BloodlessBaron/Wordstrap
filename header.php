@@ -29,7 +29,7 @@
       </nav>
 
         <div class="col-lg-12 col-md-7 col-sm-6 page-header">
-          <p class="lead"><?php echo get_bloginfo( 'description' ); ?></p>
+          <h6 class="lead"><?php echo get_bloginfo( 'description' ); ?></h6>
         </div>
     </header>
 
