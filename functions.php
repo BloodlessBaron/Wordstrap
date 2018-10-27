@@ -69,7 +69,7 @@ register_sidebar( array(
  * Custom Read More button
  */
 function modify_read_more_link() {
-    return '<ul class="pagination pagination-lg"><li class="page-item"><a class="page-link read-more" href="'. get_permalink() . '">' __('Read More', 'your-text-domain') . '</a></li></ul>';
+    return '<ul class="pagination pagination-lg"><li class="page-item"><a class="page-link read-more" href="'. get_permalink() . '">' . __('Read More', 'your-text-domain') . '</a></li></ul>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
