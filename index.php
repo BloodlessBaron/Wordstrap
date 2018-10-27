@@ -1,16 +1,20 @@
-<?php get_header();
-      if ( have_posts() ) {
-        while ( have_posts() ) : the_post();
-      ?><?php if ( is_sticky() ) { echo '<div class="sticky">'; } ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class( 'class-name' ); ?>>
-          <h2 class="blog-post-title"><?php if ( is_sticky() ) { echo '<span class="badge badge-dark">Sticky: </span>&nbsp;'; } ?><?php the_title(); ?></h2>
-          <p class="text-muted"><?php the_date(); ?> by <?php the_author(); ?> in <cite title="The Category"><?php the_category(', '); ?></p>
-          <?php the_content( '', FALSE ); ?>
-          <?php echo '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '"><button type="button" class="btn btn-primary">' . __('Go To Post', 'your-text-domain') . '</button></a><p>&nbsp;</p>'; ?>
-        </div><!-- /.blog-post -->
-        <?php if ( is_sticky() ) { echo '</div>'; };
-          endwhile;
-        }
-        ?>
-    </div>
-<?php get_footer(); ?>
+<?php
+get_header();
+  if ( have_posts() ) {
+  	while ( have_posts() ) {
+  		the_post();
+  		// Post Content here
+      get_template_part( 'template-parts/content' );
+  	} // end while
+  } // end if
+  else { // No posts were found
+    echo '<div class="alert alert-warning">
+      <h4 class="alert-heading">Warning!</h4>
+      <p class="mb-0">Your query did not return any results.</p>
+    </div>';
+  }
+  if ( !is_page() && !is_single() ) {
+    get_template_part( 'template-parts/pagination' );
+  }
+  get_sidebar();
+get_footer();
