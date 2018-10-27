@@ -13,8 +13,8 @@ get_header();
       <p class="mb-0">Your query did not return any results.</p>
     </div>';
   }
+  get_sidebar( 'sidebar' );
   if ( !is_page() && !is_single() ) {
     get_template_part( 'template-parts/pagination' );
   }
-  get_sidebar();
 get_footer();

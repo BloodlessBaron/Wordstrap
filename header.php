@@ -19,8 +19,7 @@
           <?php wp_nav_menu( array(
           'theme_location' => 'header-menu',
           'depth' => 1,
-          'menu_id' => 'navbar-nav mr-auto',
-          'items_wrap'     => '<ul class="navbar-nav mr-auto" class="%2$s">%3$s</ul>',
+          'items_wrap'     => '<ul class="navbar-nav mr-auto %2$s">%3$s</ul>',
           'container' => false,
           'walker' => new WPDocs_Walker_Nav_Menu()
           ) ); ?>
@@ -34,7 +33,7 @@
     </header>
 
 <!-- Begin page content -->
-<main role="main" class="container">
+<main class="container">
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-8 col-md-7 col-sm-6 page-header">
@@ -48,6 +47,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <?php if ( is_active_sidebar( 'sidebar' ) ) { ?>
           <div class="col-sm-8 blog-main">

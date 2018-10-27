@@ -1,5 +1,4 @@
-<?php get_sidebar(); ?>
-</div>
+
 </main>
 
     <footer class="footer bg-dark">
