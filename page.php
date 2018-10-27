@@ -1,15 +1,20 @@
-<?php get_header();
-      if ( have_posts() ) {
-        while ( have_posts() ) : the_post();
-      ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class( 'class-name' ); ?>>
-          <h2 class="blog-post-title"><?php if ( is_sticky() ) { echo '<span class="sticky-tag">Sticky </span><br />&nbsp;'; } ?><?php the_title(); ?></h2>
-          <p class="text-muted"><?php the_date(); ?> by <?php the_author(); ?></p>
-          <?php the_content(); ?>
-        </div><!-- /.blog-post -->
-        <?php
-          endwhile;
-        }
-        ?>
-    </div>
-<?php get_footer(); ?>
+<?php
+get_header();
+  if ( have_posts() ) {
+  	while ( have_posts() ) {
+  		the_post();
+  		// Post Content here
+      get_template_part( 'template-parts/content' );
+  	} // end while
+  } // end if
+  else { // No posts were found
+    echo '<div class="alert alert-warning">
+      <h4 class="alert-heading">Warning!</h4>
+      <p class="mb-0">Your query did not return any results.</p>
+    </div>';
+  }
+  get_sidebar( 'sidebar' );
+  if ( !is_page() && !is_single() ) {
+    get_template_part( 'template-parts/pagination' );
+  }
+get_footer();
