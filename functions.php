@@ -68,6 +68,14 @@ register_sidebar( array(
 /**
  * Custom walker class.
  */
+function modify_read_more_link() {
+    return '<a class="read-more" href="'. get_permalink() . '"><button type="button" class="btn btn-primary">' . __('Read More', 'your-text-domain') . '</button></a><p>&nbsp;</p>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+/**
+ * Custom walker class.
+ */
 class WPDocs_Walker_Nav_Menu extends Walker_Nav_Menu {
 
     /**
