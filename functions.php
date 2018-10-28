@@ -186,7 +186,7 @@ function wpbeginner_numeric_posts_nav() {
         $links[] = $paged + 1;
     }
 
-    echo '<nav><div><ul class="pagination pagination-lg">' . "\n";
+    echo '<nav><div>Read More Posts:<br /><ul class="pagination">' . "\n";
 
     /** Previous Post Link */
     if ( get_previous_posts_link() )
